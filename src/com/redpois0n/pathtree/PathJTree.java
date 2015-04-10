@@ -22,7 +22,7 @@ public class PathJTree extends JTree implements TreeExpansionListener, MouseList
 	private String delimiter;
 
 	public PathJTree() {
-		this(new PathTreeModel(new FolderTreeNode("root", null)), "/");
+		this(new PathTreeModel(new FolderTreeNode("root", FileIconUtils.getFolderIcon())), "/");
 	}
 	
 	public PathJTree(TreeModel model, String delimiter) {
